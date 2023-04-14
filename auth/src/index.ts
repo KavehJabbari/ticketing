@@ -8,7 +8,7 @@ let PORT = 3000;
 //process.env.MONGO_URI = "mongodb://127.0.0.1:27017/auth";
 
 const start = async () => {
-  console.log("Starting up...");
+  console.log("Changes");
   if (!process.env.JWT_KEY) {
     throw new Error("JWT_KEY must be defined");
   }
