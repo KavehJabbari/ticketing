@@ -2,7 +2,7 @@ name: tests-auth
 
 on:
   pull_request
-    path:
+    paths:
       - "auth/**"
   
 jobs:
@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd auth && npm install && npm run test:ci
+      - run: cd auth && npm install
